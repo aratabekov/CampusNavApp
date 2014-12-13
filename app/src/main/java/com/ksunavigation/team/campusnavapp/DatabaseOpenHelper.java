@@ -32,7 +32,7 @@ public  class DatabaseOpenHelper extends SQLiteOpenHelper {
 
     //private static final boolean copy_database = true;
 
-    private static final boolean replace_local_database = false;
+    private static final boolean replace_local_database = true;
 
 
     /* Note that FTS3 does not support column constraints and thus, you cannot
