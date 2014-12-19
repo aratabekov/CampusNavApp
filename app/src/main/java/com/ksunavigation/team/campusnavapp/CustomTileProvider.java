@@ -59,8 +59,7 @@ public class CustomTileProvider implements TileProvider {
     }
 
     private String getTileFilename(int x, int y, int zoom) {
-        String s = String.format("https://dl.dropboxusercontent.com/u/25207350/Tiles/%d_%d_%d.png",
-                x, y,zoom);
+        //String s = String.format("https://dl.dropboxusercontent.com/u/25207350/Tiles/%d_%d_%d.png", x, y,zoom);
         return "tiles/" + x + '_' + y + '_' + zoom + ".png";
     }
 }
