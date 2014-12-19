@@ -50,14 +50,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.maps.model.TileOverlayOptions;
-import com.google.android.gms.maps.model.TileProvider;
-import com.google.android.gms.maps.model.UrlTileProvider;
 import com.ksunavigation.team.campusnavapp.routing.Graph;
 import com.ksunavigation.team.campusnavapp.routing.Point;
 import com.ksunavigation.team.campusnavapp.utils.ParserUtils;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -445,11 +441,11 @@ public class MapsActivity extends FragmentActivity implements
                 return false;
         }
     }
-    TileProvider tileProvider = new UrlTileProvider(256, 256) {
+   /* TileProvider tileProvider = new UrlTileProvider(256, 256) {
         @Override
         public URL getTileUrl(int x, int y, int zoom) {
 
-    /* Define the URL pattern for the tile images */
+       // Define the URL pattern for the tile images
             String s = String.format("https://dl.dropboxusercontent.com/u/25207350/Tiles/%d_%d_%d.png",
                     x, y,zoom);
 
@@ -459,7 +455,7 @@ public class MapsActivity extends FragmentActivity implements
                 throw new AssertionError(e);
             }
         }
-    };
+    };*/
 
     /**
      * Sets up the map if it is possible to do so (i.e., the Google Play services APK is correctly

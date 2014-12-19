@@ -13,8 +13,8 @@ import java.io.InputStream;
  * Created by Amir on 12/4/14.
  */
 public class CustomTileProvider implements TileProvider {
-    private static final int TILE_WIDTH = 256;
-    private static final int TILE_HEIGHT = 256;
+    private static final int TILE_WIDTH = 512;
+    private static final int TILE_HEIGHT = 512;
     private static final int BUFFER_SIZE = 16 * 1024;
 
     private AssetManager mAssets;
